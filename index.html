@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гомель - Город Мифов и Истории</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Гомель</h1>
+    <nav>
+        <a href="#info">Информация</a>
+        <a href="#facts">Факты и мифы</a>
+        <a href="#quiz">Тест на знания</a>
+    </nav>
+</header>
+
+<section id="info">
+    <h2>Информация о Гомеле</h2>
+    <img src="https://cdnn11.img.sputnik.by/img/07e6/0c/14/1070311353_0:94:1800:1107_1920x0_80_0_0_ee141a23783889d1eaa3fa5fb5611c62.jpg" alt="Гомельский дворец">
+    <p>Гомель — один из крупнейших городов Беларуси, расположенный на юго-востоке страны. Он известен своей богатой историей, красивой архитектурой и множеством культурных событий.</p>
+    <p>Город был основан в XI веке и на протяжении веков играл важную роль в торговле и культуре региона. Гомель также известен своими парками и зелеными зонами, которые привлекают жителей и туристов.</p>
+</section>
+
+<section id="facts">
+    <h2>Интересные факты и мифы о Гомеле</h2>
+    <div class="card">
+        <h3>Легенда о черной кошке</h3>
+        <p>В Гомеле считается, что встреча с черной кошкой приносит удачу.</p>
+    </div>
+    <div class="card">
+        <h3>Затонувший город</h3>
+        <p>Под рекой Сож, по преданиям, скрывается затонувший город, который иногда появляется во время наводнений.</p>
+    </div>
+    <div class="card">
+        <h3>Фонарь желания</h3>
+        <p>Старый фонарный столб на центральной площади исполняет желания тех, кто загадывает их при его свете.</p>
+    </div>
+    <div class="card">
+        <h3>Гомельский дворец</h3>
+        <p>Дворец Румянцевых и Паскевичей — одна из главных архитектурных достопримечательностей города, построенная в стиле ампир.</p>
+    </div>
+    <div class="card">
+        <h3>Парк имени Фрунзе</h3>
+        <p>Один из самых больших и красивых парков в Гомеле, где проводятся различные культурные мероприятия.</p>
+    </div>
+</section>
+
+<section id="quiz" class="quiz">
+    <h2>О новом Гомеле мы поговорили, а как насчет старого?</h2>
+    <div class="quiz-question">
+        <p class="quiz-text">1. Какая улица изображена на картинке?</p>
+        <div class="Flex-row">
+        <label class="quiz-answer"><input type="radio" name="q1" value="1"> Улица Советская</label><br>
+        <label class="quiz-answer"><input type="radio" name="q1" value="2"> Улица Котовского</label><br>
+        <label class="quiz-answer"><input type="radio" name="q1" value="3"> Проспект Независимости</label><br>
+
+        </div>
+        <div class="q-img1" style="background-color:rgb(46, 46, 46);padding-bottom: 20px;border-radius: 15px;">
+            <img src="https://pic.belkagomel.by/2020/09/kak-menyalsya-gomel-gorod-v-staryh-i-sovremennyh-foto1.jpg" alt="?" class="quiz-img">
+            <img src="1.png" alt="" class="strelka">
+            <div id="canvas" class="quiz-img" style="background-image: url(https://pic.belkagomel.by/2020/09/kak-menyalsya-gomel-gorod-v-staryh-i-sovremennyh-foto19.jpg);"></div>
+        </div>
+    </div>
+    <!-- <div class="quiz-question">
+        <p class="quiz-text">2. Какой проспект изображен на картинке?</p>
+        <label class="quiz-answer"><input type="radio" name="q2" value="Soz"> Сож</label><br>
+        <label class="quiz-answer"><input type="radio" name="q2" value="Dnepr"> Днепр</label><br>
+        <label class="quiz-answer"><input type="radio" name="q2" value="Neman"> Неман</label><br>
+        <img src="https://pic.belkagomel.by/2020/09/kak-menyalsya-gomel-gorod-v-staryh-i-sovremennyh-foto3.jpg" alt="?" class="quiz-img">
+    </div>
+    <div class="quiz-question">
+        <p class="quiz-text">3. Какая площадь изображена на картинке?</p>
+        <label class="quiz-answer"><input type="radio" name="q3" value="Palace"> Гомельский дворец</label><br>
+        <label class="quiz-answer"><input type="radio" name="q3" value="Church"> Церковь Святой Софии</label><br>
+        <label class="quiz-answer"><input type="radio" name="q3" value="Castle"> Замок в Гродно</label><br>
+        <img src="https://pic.belkagomel.by/2020/09/kak-menyalsya-gomel-gorod-v-staryh-i-sovremennyh-foto7.jpg" alt="?" class="quiz-img">
+    </div> -->
+    <button onclick="checkAnswers()">Проверить ответы</button>
+    <div id="result" style="margin:20px ;"></div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Гомель - Город Мифов и Истории</p>
+</footer>
+
+<script>
+    // Проверка ответов в тесте
+    function checkAnswers() {
+        let score = 0;
+    
+        // Правильные ответы
+        const answers = {
+            q1: "1",
+            q2: "Soz",
+            q3: "Palace"
+        };
+    
+        // Проверка ответов
+        for (let question in answers) {
+            const selected = document.querySelector(`input[name="${question}"]:checked`);
+            if (selected && selected.value === answers[question]) {
+                score++;
+            }
+        }
+    
+        // Вывод результата
+        document.getElementById("result").innerText = `Вы набрали ${score} из ${Object.keys(answers).length} правильных ответов.`;
+    }
+    
+    (function() {
+
+
+    function createCanvas(parent, width, height) {
+        var canvas = {};
+        canvas.node = document.createElement('canvas');
+        canvas.context = canvas.node.getContext('2d');
+        canvas.node.width = width || 100;
+        canvas.node.height = height || 100;
+        parent.appendChild(canvas.node);
+        return canvas;
+    }
+
+    function init(container, width, height, fillColor) {
+        var canvas = createCanvas(container, width, height);
+        var ctx = canvas.context;
+        ctx.fillCircle = function(x, y, radius, fillColor) {
+            this.fillStyle = fillColor;
+            this.beginPath();
+            this.moveTo(x, y);
+            this.arc(x, y, radius, 0, Math.PI * 2, false);
+            this.fill();
+        };
+        ctx.clearTo = function(fillColor) {
+            ctx.fillStyle = fillColor;
+            ctx.fillRect(0, 0, width, height);
+        };
+        ctx.clearTo(fillColor || "#ddd");
+
+        canvas.node.onmousemove = function(e) {
+            if (!canvas.isDrawing) {
+               return;
+            }
+            var x = e.pageX - this.offsetLeft;
+            var y = e.pageY - this.offsetTop;
+            var radius = 30; 
+            var fillColor = '#ff0000';
+            ctx.globalCompositeOperation = 'destination-out';
+            ctx.fillCircle(x, y, radius, fillColor);
+        };
+        canvas.node.onmousedown = function(e) {
+            canvas.isDrawing = true;
+        };
+        canvas.node.onmouseup = function(e) {
+            canvas.isDrawing = false;
+        };
+    }
+
+    var container = document.getElementById('canvas');
+    init(container, 531, 438, '#ddd');
+
+})();
+    </script>
+    
+    </body>
+    </html>
