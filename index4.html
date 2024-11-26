@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звезды нашей школы</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(61, 61, 61);
+}
+
+.hero {
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.students {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.slideshow {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.slide {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+}
+
+    </style>
+</head>
+<body>
+    <!-- Плашка -->
+    <div class="hero">
+        <h1>Звезды нашей школы</h1>
+    </div>
+    
+    <!-- Карточки учеников -->
+    <section class="students">
+        <h2>Наши победители</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="#" alt="Фотография ученика">
+                <h3>Фамилия Имя</h3>
+                <p>Чем прославился:</p>
+                <p>Текст о достижениях.</p>
+            </div>
+            <!-- Добавьте еще 9 таких же карточек -->
+        </div>
+    </section>
+    
+    <!-- Слайд-шоу -->
+    <section class="slideshow">
+        <h2>Работы наших победителей</h2>
+        <div class="slides">
+            <div class="slide"></div>
+            <!-- Добавьте еще несколько div'ов с классом slide -->
+        </div>
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
