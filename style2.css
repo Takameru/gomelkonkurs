@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar styling */
 .navbar {
     position: fixed;
     display: flex;
@@ -45,7 +44,6 @@ body {
     color: #f4a261;
 }
 
-/* Fullscreen Section */
 .fullscreen {
     width: 100vw;
     height: 100vh;
@@ -99,7 +97,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #f4f4f4; /* Light background color */
+            background-color: #f4f4f4;
             padding: 20px;
             text-align: left;
         }
@@ -116,13 +114,13 @@ body {
             margin: 15px 0;
             font-size: 1.2rem;
             color: #333;
-            justify-content: flex-start; /* Keep the icon and text aligned horizontally */
+            justify-content: flex-start; 
         }
 
         .goal i {
             font-size: 2rem;
-            color: #338d89; /* Green color for the icons */
-            margin-right: 15px; /* Spacing between the icon and text */
+            color: #338d89; 
+            margin-right: 15px; 
         }
 
         .goal p {
@@ -133,7 +131,6 @@ body {
             text-align: left;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .goals-section h1 {
                 font-size: 2.5rem;
@@ -148,7 +145,7 @@ body {
             }
 
             .goal p {
-                text-align: right; /* Ensure text stays aligned right on smaller screens */
+                text-align: right;
             }
         }
         .full-section1 {
@@ -161,7 +158,6 @@ body {
             position: relative;
         }
 
-        /* Center content styling */
         .content1 {
             max-width: 800px;
             text-align: center;
@@ -218,12 +214,12 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 100vw;      /* Full-screen width: 80% of viewport width */   /* Center the full-screen section */
-            background-color: #f2fafa; /* Very light beige for the section background */
+            width: 100vw;      
+            background-color: #f2fafa; 
             background-image: url(https://png.pngtree.com/png-clipart/20200224/original/pngtree-smart-city-vector-seamless-pattern-png-image_5242406.jpg);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             overflow-y: auto;
-            height: auto;   /* Height adjusts based on content */
+            height: auto;   
             overflow-x: hidden;
             gap: 20px   ;
         }
@@ -233,48 +229,48 @@ body {
             margin-bottom: 30px;
             font-weight: bold;
             padding: 20px;
-            background-color: rgb(0, 67, 112); /* Dark red shade for the navbar */
+            background-color: rgb(0, 67, 112); 
             width: 100vw;
-            margin-top: 0px; /* Space above the navigation */
+            margin-top: 0px; 
             color: white;
         }
         
         
         
         .card1 {
-            background-color: rgb(0, 75, 126); /* Primary dark red color for the card */
+            background-color: rgb(0, 75, 126); 
             display: flex;
             flex-direction: row;
             width: 80%;
-            margin-bottom: 30px;  /* Space between cards */
-            height: 50vh;         /* Card height set to 50% of the viewport height */
+            margin-bottom: 30px;  
+            height: 50vh;         
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             align-self: flex-end;
             margin-right: 20px;
         }
         .card2 {
-            background-color: rgb(21, 88, 133); /* Primary dark red color for the card */
+            background-color: rgb(21, 88, 133); 
             display: flex;
             flex-direction: row;
             width: 80%;
-            margin-bottom: 30px;  /* Space between cards */
-            height: 50vh;         /* Card height set to 50% of the viewport height */
+            margin-bottom: 30px;  
+            height: 50vh;      
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             align-self: flex-start;
             margin-left: 10px;
         }
         
-        /* Card layout for when text is on the left and image on the right */
+
         .card1.text-left1 .left-side1 {
-            order: -1; /* Swap order of text and image */
+            order: -1; 
         }
         
         .left-side1 {
             width: 60%;
             padding: 20px;
-            color: #e66759; /* Light red-pink text color */
+            color: #e66759; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -298,7 +294,7 @@ body {
         .text-wrapper1 {
             padding: 10px;
             background-color: white;
-            color: #760013; /* Primary dark red for text */
+            color: #760013; 
             height: 100%;
             padding: 20px;
         }
@@ -343,7 +339,7 @@ body {
 
         }
         .image-box.im7 {
-            background-image: url(https://planetabelarus.by/upload/resize_cache/iblock/9c7/1330_747_18e21fe612b4afb807a26ecc22279a1d9/9c73ce27d210eec341ce2abc02f168ce.jpg);
+            background-image: url(https://img-fotki.yandex.ru/get/4704/251904653.31/0_ef144_9d5293d8_XXXL.jpg);
 
         }
         #drawing-section {
@@ -394,4 +390,56 @@ body {
           .gallery-item img {
             max-width: 300px;
             max-height: 200px;
+          }
+          .section3 {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+          }
+      
+          .top-div3, .bottom-div3 {
+            height: 25vh;
+            width: 100%;
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .top-div3 {
+            background-image: url(https://gomelschool11.by/wp-content/uploads/2018/02/scool_11_3.png);
+          }
+          .bottom-div3 {
+            background-image: url(https://avianity.ru/wp-content/uploads/gomel.jpg);
+
+          }
+      
+          .center-div3 {
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+          }
+      
+          .center-div3 h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+          }
+      
+          .center-div3 button3 {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+      
+          .center-div3 button3:hover {
+            background-color: #0056b3;
           }

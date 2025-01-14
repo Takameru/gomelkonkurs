@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar styling */
 .navbar {
     position: fixed;
     display: flex;
@@ -61,8 +60,8 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Ensure the video covers the full screen */
-        z-index: -1; /* Keep video in the background */
+        object-fit: cover; 
+        z-index: -1; 
         }
 
 .fullscreen .content h1 {
@@ -126,7 +125,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #f4f4f4; /* Light background color */
+            background-color: #f4f4f4; 
             padding: 20px;
             text-align: center;
         }
@@ -143,13 +142,13 @@ body {
             margin: 15px 0;
             font-size: 1.2rem;
             color: #333;
-            justify-content: flex-start; /* Keep the icon and text aligned horizontally */
+            justify-content: flex-start; 
         }
 
         .goal i {
             font-size: 2rem;
-            color: #4CAF50; /* Green color for the icons */
-            margin-right: 15px; /* Spacing between the icon and text */
+            color: #4CAF50; 
+            margin-right: 15px; 
         }
 
         .goal p {
@@ -157,10 +156,9 @@ body {
             margin: 0;
             color: #555;
             line-height: 1.6;
-            text-align: right; /* Align the text to the right */
+            text-align: right;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .goals-section h1 {
                 font-size: 2.5rem;
@@ -175,7 +173,7 @@ body {
             }
 
             .goal p {
-                text-align: right; /* Ensure text stays aligned right on smaller screens */
+                text-align: right;
             }
         }
         .full-section1 {
@@ -188,7 +186,6 @@ body {
             position: relative;
         }
 
-        /* Center content styling */
         .content1 {
             max-width: 800px;
             text-align: center;
@@ -239,7 +236,7 @@ body {
         }
 
         .left2 {
-            background-image: url(https://media.slovoidilo.ua/media/publications/17/162013/162013-1_large.jpg);
+            background-image: url(https://cdn.tripster.ru/thumbs2/4bc25de2-4875-11ed-a4ef-de8cbc8e9d96.1080x810.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -250,7 +247,7 @@ body {
 
         }
         .right2 {
-            background-image: url(https://minjust.gov.by/upload/iblock/944/Gossimvoly.jpg);
+            background-image: url(https://bestbelarus.by/upload/resize_cache/webp/iblock/b7f/b7ffcee02d04855f4703e4888fb2a54d.webp);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -273,7 +270,6 @@ body {
             padding-top: 6vh;
         }
 
-        /* Memory Cards Grid */
         .game-board {
             display: grid;
             grid-template-columns: repeat(5, 150px);
@@ -283,11 +279,10 @@ body {
             align-items: center;
         }
 
-        /* Individual Card Styling */
         .card {
             width: 130px;
             height: 130px;
-            border-radius: 15px; /* Added border radius */
+            border-radius: 15px; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -318,7 +313,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            border-radius: 15px; /* Matching border radius for front and back */
+            border-radius: 15px; 
         }
 
         .card-front {
@@ -345,19 +340,17 @@ body {
             border-radius: 10px;
         }
 
-        /* Win message */
         .win-message {
             font-size: 2rem;
-            color: #F0C54D;
-            margin-top: 20px;
+            color: #3a0000;
             text-align: center;
             display: none;
+            background-color: white;
         }
 
-        /* Button Styling */
         .restart-button {
             padding: 10px 20px;
-            background-color: #5E7405;
+            background-color: #000000;
             color: white;
             border: none;
             border-radius: 5px;
@@ -367,7 +360,7 @@ body {
         }
 
         .restart-button:hover {
-            background-color: #4C5D04;
+            background-color: #2e2e2e;
         }
         .game-info {
             background-color: #be0f15;
